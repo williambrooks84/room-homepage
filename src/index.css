@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white: hsl(0, 100%, 100%);
+  --color-grey-500: hsl(0, 0%, 63%);
+  --color-grey-800: hsl(0, 0%, 27%);
+  --color-black: hsl(0, 0%, 0%);
+
+  --font-league-spartan: "League Spartan", sans-serif;
+}
+
+:root {
+  font-family: var(--font-league-spartan);
+  font-size: 1rem;
+  color: var(--color-black);
+  background: var(--color-white);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  /*min-width: 320px;*/
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  outline: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  outline: none;
+}
