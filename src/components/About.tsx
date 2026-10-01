@@ -9,10 +9,26 @@ const aboutContent = {
 
 export default function About() {
     return (
-        <section id="about" className="flex flex-col lg:flex-row">
-            <img src={imageDark} alt="Dark about illustration" className="w-full h-fit lg:w-1/3" />
-            <AboutDescription title={aboutContent.title} text={aboutContent.text} />
-            <img src={imageLight} alt="Light about illustration" className="w-full h-fit lg:w-1/3" />
+        <section
+            id="about"
+            className="flex flex-col lg:grid lg:grid-cols-[30%_40%_30%]"
+        >
+            <img
+                src={imageDark}
+                alt="Dark furniture interior"
+                className="block w-full h-full object-cover"
+            />
+
+            <AboutDescription
+                title={aboutContent.title}
+                text={aboutContent.text}
+            />
+
+            <img
+                src={imageLight}
+                alt="Light furniture interior"
+                className="block w-full h-full object-cover"
+            />
         </section>
-    )
+    );
 }
